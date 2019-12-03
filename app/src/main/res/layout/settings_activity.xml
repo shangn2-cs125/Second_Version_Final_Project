@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/easyMode"
+                android:layout_width="312dp"
+                android:layout_height="83dp"
+                android:text="EzPz" />
+
+            <RadioButton
+                android:id="@+id/mediumMode"
+                android:layout_width="312dp"
+                android:layout_height="83dp"
+                android:text="TakeSomeChallenge" />
+
+            <RadioButton
+                android:id="@+id/hardMode"
+                android:layout_width="312dp"
+                android:layout_height="83dp"
+                android:text="Hella Hard" />
+
+            <EditText
+                android:id="@+id/setTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Set the Time Limit Here (30 seconds default)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/check"
+                    android:layout_width="203dp"
+                    android:layout_height="wrap_content"
+                    android:text="Submit" />
+
+                <Button
+                    android:id="@+id/random"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Random" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
