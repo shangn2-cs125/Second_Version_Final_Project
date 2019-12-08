@@ -19,7 +19,7 @@
 
         <TextView
             android:id="@+id/title"
-            android:layout_width="386dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="                  Question 2"
             android:textSize="30sp"
@@ -39,11 +39,11 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/question3"
-            android:layout_width="384dp"
+            android:id="@+id/question"
+            android:layout_width="match_parent"
             android:layout_height="151dp"
             android:text="    You are in a running race. You excel the last one. Which place are you in?"
-            android:textSize="24sp" />
+            android:textSize="30sp" />
 
         <LinearLayout
             android:layout_width="match_parent"

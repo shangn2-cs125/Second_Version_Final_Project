@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class Q3 extends AppCompatActivity {
 
-    private TextView score = findViewById(R.id.score);
+    private TextView score = findViewById(R.id.score3);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,15 +19,15 @@ public class Q3 extends AppCompatActivity {
         Intent intent = getIntent();
         String lastScore = intent.getStringExtra("score");
         score.setText(lastScore);
-        final TextView correctAnswer = findViewById(R.id.correction);
+        final TextView correctAnswer = findViewById(R.id.correction3);
         correctAnswer.setVisibility(View.INVISIBLE);
-        Button submit = findViewById(R.id.submit);
-        final Button next = findViewById(R.id.next);
+        Button submit = findViewById(R.id.submit3);
+        final Button next = findViewById(R.id.next3);
         next.setVisibility(View.INVISIBLE);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                TextView answer = findViewById(R.id.answer);
+                TextView answer = findViewById(R.id.answer3);
                 String input = answer.getText().toString();
                 if (input.equals("4100")) {
                     if (score.getText().toString().equals("0 / 100")) {

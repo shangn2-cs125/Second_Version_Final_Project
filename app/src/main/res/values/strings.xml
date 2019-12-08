@@ -6,6 +6,7 @@
     <string name="input">Please Type in Your User Name</string>
     <string name="quit">Quit</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="time">00:30</string>
 
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
