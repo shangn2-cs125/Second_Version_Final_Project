@@ -8,12 +8,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RPC2 extends AppCompatActivity {
+public class GiveInformation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rpc2);
+        setContentView(R.layout.activity_giveinformation);
         Intent intent = getIntent();
         TextView userName = findViewById(R.id.helloUser);
         String user = intent.getStringExtra("Username");
@@ -32,18 +32,16 @@ public class RPC2 extends AppCompatActivity {
             @Override
             // the user does not want play -> go back to main menu
             public void onClick(View view) {
-                Intent previous = new Intent(RPC2.this, MainActivity.class);
+                Intent previous = new Intent(GiveInformation.this, MainActivity.class);
                 startActivity(previous);
-                finish();
             }
         });
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             // the user chooses to play -> go to question1
             public void onClick(View view) {
-                Intent question1 = new Intent(RPC2.this, Q1.class);
+                Intent question1 = new Intent(GiveInformation.this, Question.class);
                 startActivity(question1);
-                finish();
             }
         });
     }

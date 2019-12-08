@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Q2">
+    tools:context=".Question">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -18,11 +18,16 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
             android:id="@+id/title"
-            android:layout_width="386dp"
-            android:layout_height="match_parent"
-            android:text="                  Question 2"
-            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Challenge #1"
+            android:textSize="22sp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -39,31 +44,42 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <TextView
-            android:id="@+id/question3"
-            android:layout_width="384dp"
-            android:layout_height="151dp"
-            android:text="    You are in a running race. You excel the last one. Which place are you in?"
-            android:textSize="24sp" />
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You are in a running race. You excel the second place. Which place are you in?"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp">
 
             <TextView
-                android:id="@+id/remind2"
+                android:id="@+id/remind"
                 android:layout_width="45dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:text="Your answer:"
                 android:textSize="18sp" />
 
-            <TextView
-                android:id="@+id/answer2"
+            <EditText
+                android:id="@+id/answer"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="TextView"
-                android:textSize="18sp" />
+                android:ems="10"
+                android:inputType="textPersonName" />
+
         </LinearLayout>
 
     </LinearLayout>
@@ -78,7 +94,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <Button
-            android:id="@+id/submit2"
+            android:id="@+id/submit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SUBMIT"
@@ -99,7 +115,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/yourScore2"
+            android:id="@+id/yourScore"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -118,7 +134,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <TextView
-            android:id="@+id/score2"
+            android:id="@+id/score"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -138,32 +154,32 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/correction2"
+            android:id="@+id/correction"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Paradox: how can you excel the last one?"
+            android:text="After you excel the second place, you just replace him -- now you are in the second place!"
             android:textColor="#F44336"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            tools:visibility="invisible" />
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="411dp"
-        android:layout_height="59dp"
-        android:layout_marginBottom="100dp"
-        android:orientation="vertical"
+        android:layout_width="337dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
-        <Button
-            android:id="@+id/next2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="NEXT"
-            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/time"
+            android:visibility="visible" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

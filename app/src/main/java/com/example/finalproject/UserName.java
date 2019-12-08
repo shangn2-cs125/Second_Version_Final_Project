@@ -18,7 +18,7 @@ public class UserName extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserName.this, RPC2.class);
+                Intent intent = new Intent(UserName.this, GiveInformation.class);
                 TextView userName = findViewById(R.id.user);
                 String user = userName.getText().toString();
                 intent.putExtra("Username", user);
